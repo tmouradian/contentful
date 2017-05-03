@@ -22,3 +22,5 @@ It works great 💯
 
 -  build.sh zh-CN  Auburn
 
+
+The output and generated website will be plased into `public/index.html` 
