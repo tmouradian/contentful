@@ -1,8 +1,8 @@
 {
-  "name": "test",
-  "description": "test project",
+  "name": "contentful",
+  "description": "contentful integration project",
   "version": "0.0.1",
-  "author": "",
+  "author": "Tim Mouradian",
   "ava": {
     "verbose": "true"
   },
@@ -35,10 +35,10 @@
   "engines": {
     "node": ">= 6.0.0"
   },
-  "homepage": "https://github.com//test",
+  "homepage": "https://github.com/tmouradian/contentful",
   "main": "app.js",
-  "private": true,
-  "repository": "https://github.com//test",
+  "private": false,
+  "repository": "https://github.com/tmouradian/contentful",
   "scripts": {
     "lint": "standard | snazzy",
     "precommit": "npm run lint -s",
