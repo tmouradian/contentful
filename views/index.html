@@ -1,0 +1,104 @@
+<extends src='layout.html'>
+
+  <block name='contentfull-schoolStats'>
+
+    <each loop="item, index of contentful.Product">
+
+      <if condition="item!= null">
+
+        <section id="stats" class="clearfix">
+
+          <div class="container">
+
+            <h1>{{{item.fields.productName}}}</h1>
+
+            <div class="stats-columns clearfix mobile-hidden">
+              <!-- Column 1 -->
+              <div class="stats-col stats-col-1">
+                <p>Location
+                  <strong>{{{item.fields.location}}}</strong>
+                </p>
+                <p>Enrollment
+                  <strong>{{{item.fields.enrollment}}}</strong>
+                </p>
+              </div><!-- /.stats-col-1 -->
+              <!-- Column 2 -->
+              <div class="stats-col stats-col-2">
+                <p>Tuition
+                  <strong>{{{item.fields.tuition}}}</strong>
+                </p>
+                <p>Room and Board
+                  <strong>{{{item.fields.fees}}}</strong>
+                </p>
+              </div><!-- /.stats-col-2 -->
+              <!-- Column 3 -->
+              <div class="stats-col stats-col-3">
+                <p>School Type
+                  <strong>{{{item.fields.schoolType}}}</strong>
+                </p>
+                <p>Academic Calendar
+                  <strong>{{{item.fields.academicCalendar}}}</strong>
+                </p>
+              </div><!-- /.stats-col-3 -->
+              <!-- Column 4 -->
+
+              <div class="stats-col stats-col-4">
+                <a href="#modal" class="button button-primary modal">More Info</a>
+                <a href="http://www.adelphi-international.org/application/" class="button button-secondary">Apply
+                  Now</a>
+              </div><!-- /.stats-col-4 -->
+            </div><!-- /.clearfix -->
+          </div><!-- /.container -->
+        </section><!-- /section#stats -->
+
+
+        <section id="rankings" class="clearfix mobile-hidden">
+          <div class="container">
+            <div class="testimonial">
+              {{{item.fields.testimonial}}}
+            </div><!-- /.testimonial -->
+            <div class="rankings-list">
+              <ul>
+                <li>
+                  <em>National Universities</em>
+                  <span class="rank"><strong>146</strong>
+							(tie)</span>
+                </li>
+                <li>
+                  <em>Best Colleges for Veterans</em>
+                  <span class="rank"><strong>98</strong>
+							(tie)</span>
+                </li>
+                <li>
+                  <em>High School Counselor Rankings</em>
+                  <span class="rank"><strong>196</strong>
+							(tie)</span>
+                </li>
+              </ul>
+            </div><!-- /.rankings-list -->
+          </div><!-- /.container -->
+        </section><!-- /section#rankings -->
+
+
+      </if>
+    </each>
+
+
+  </block>
+
+
+
+  <block name='contentfull-main'>
+
+    <each loop="item, index of contentful.Product">
+
+      <if condition="item!= null">
+        {{{ item.fields.productDescription }}}
+      </if>
+    </each>
+
+  </block>
+
+</extends>
+
+
