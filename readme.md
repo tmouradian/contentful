@@ -14,13 +14,20 @@ It works great 💯
 
 ## Building 
 
-### Auburn University (English)
+### Few examples building microsites
 
--  build.sh en-US Auburn
+#### Auburn University in US English
 
-### Adelphi University (Simplified Chinese)
+-  `build.sh en-US Auburn`
 
--  build.sh zh-CN  Auburn
+#### Adelphi University in Simplified Chinese
+
+-  `build.sh zh-CN Adelphi`
+
+#### Florida International with embedded video assets
+
+-  `build.sh en-US FIU`
+
 
 
 The output and generated website will be plased into `public/index.html` 
